@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Casa do Automóvel</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilo geral do corpo */
+        body {
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            background-color: gray; /* Cor de fundo suave */
+            display: flex; /* Flexbox para centralização */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da janela */
+            margin: 0; /* Remove margens padrão */
+        }
+
+        /* Container centralizado */
+        .container {
+            background-color: yellow; /* Fundo */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 600px; /* Largura fixa */
+            text-align: center; /* Texto centralizado */
+        }
+
+        /* Estilo do título */
+        h2, h1 {
+            margin-bottom: 20px; /* Espaçamento inferior */
+            color: #333333; /* Cor do texto */
+        }
+
+        /* Grupo de formulário */
+        .form-group {
+            margin-bottom: 20px; /* Espaçamento inferior */
+        }
+
+        /* Estilo dos rótulos */
+        label {
+            display: block; /* Exibição em bloco */
+            margin-bottom: 5px; /* Espaçamento inferior */
+            color: #460c91; /* Cor do texto */
+        }
+
+        /* Estilo dos campos de entrada e seleção */
+        input[type="number"],
+        select {
+            width: 100%; /* Largura total */
+            padding: 8px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            box-sizing: border-box; /* Inclui preenchimento e bordas na largura */
+        }
+
+        /* Estilo do botão de submissão */
+        input[type="submit"] {
+            background-color: gray; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* Remove borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+
+        /* Efeito de hover no botão de submissão */
+        input[type="submit"]:hover {
+            background-color: darkgray; /* Cor de fundo ao passar o mouse */
+        }
+
+        /* Estilo da tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Remover espaço entre células */
+            margin-top: 20px; /* Espaçamento superior */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Borda das células */
+            padding: 8px; /* Espaçamento interno */
+            text-align: left; /* Alinhamento do texto */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Cor de fundo dos cabeçalhos */
+        }
+
+        img {
+            width: 80px; /* Largura das imagens */
+            height: auto; /* Manter proporção */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo-casa-do-automovel.png" alt="Logo Casa do Automóvel">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Montadora</th>
+                    <th>Modelo</th>
+                    <th>Ano Fabricação</th>
+                    <th>Ano Modelo</th>
+                    <th>Cor</th>
+                    <th>Imagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>2020</td>
+                    <td>2020</td>
+                    <td>Branco</td>
+                    <td><img src="Imagem_corolla.jpg" alt="Toyota Corolla"></td>
+                </tr>
+                <tr>
+                    <td>Ford</td>
+                    <td>Fiesta</td>
+                    <td>2019</td>
+                    <td>2019</td>
+                    <td>Vermelho</td>
+                    <td><img src="imagem_Fiesta.jpg" alt="Ford Fiesta"></td>
+                </tr>
+                <tr>
+                    <td>Chevrolet</td>
+                    <td>Onix</td>
+                    <td>2018</td>
+                    <td>2018</td>
+                    <td>Vermelho</td>
+                    <td><img src="imagem_Onix.jpg" alt="Chevrolet Onix"></td>
+                </tr>
+                <tr>
+                    <td>Volkswagen</td>
+                    <td>Golf</td>
+                    <td>2021</td>
+                    <td>2021</td>
+                    <td>Branco</td>
+                    <td><img src="imagem_Golf.jpg" alt="Volkswagen Golf"></td>
+                </tr>
+                <tr>
+                    <td>Honda</td>
+                    <td>Civic</td>
+                    <td>2017</td>
+                    <td>2017</td>
+                    <td>Preto</td>
+                    <td><img src="imagem_civic.jpg" alt="Honda Civic"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="quem-somos">
+            <h4>
+                A Casa do Automóvel possui mais de 13 anos no mercado de venda de automóveis, 
+                atendendo a Brasília e região, com clientes espalhados em vários estados, 
+                tendo seus fundadores presentes e atuantes até os dias de hoje.
+            </h4>
+        </div>
+
+        <div id="endereco-da-loja">
+            <h3>
+                Nosso endereço: <br>
+                SCIA Quadra 15 Conjunto 7, Lote 07/08<br>
+                Cidade do Automóvel, Zona Industrial<br>
+                Telefone: (61) 3265-8936 <br>
+                E-mail: casadoautomovel@gmail.com<br>
+                Brasília - DF, 71250-035<br>
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
